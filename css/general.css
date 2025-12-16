@@ -253,19 +253,6 @@ body {
         justify-content: center;
     }
 
-    .donation-option:first-child {
-        background-color: #243049;
-        border: 2px solid rgba(255,255,255,0.3);
-        color: white;
-        padding: 12px;
-        border-radius: 5px;
-        text-align: center;
-        font-family: ibm-plex-bold;
-        cursor: pointer;
-        width: 100%;
-        resize: none;
-    } 
-
     .donate-submit-modal {
         background-color: white;
         color: var(--blue);

@@ -222,17 +222,25 @@
     font-size: 16px;
 }
 
-.news-article {
+.news-article-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
 
 .news-img {
-    width: 100%;
+    width: 80vw;
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+.news-card-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 5vw;
+    padding-bottom: 2vw;
 }
 
 .news-content {
@@ -583,7 +591,7 @@ textarea {
 /* Nyhedssektion */
 .news {
     background-color: var(--blue);
-    padding: 1vw 0 2vw;
+    padding: 75px 40px;
 }
 
 .news-container {
@@ -607,13 +615,13 @@ textarea {
     font-size: 24px;
 }
 
-.news-article {
+.news-article-card {
     display: flex;
     flex-direction: row;
 }
 
 .news-content {
-    width: 30vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -622,11 +630,12 @@ textarea {
 }
 
 .news-arrow {
+    margin: 2vw 0;
     display: block;
 }
 
 .news-img {
-    height: 50%;
+    height: 100%;
     width: auto;
     margin: 0;
 }
@@ -636,6 +645,14 @@ textarea {
     margin: 0 16px;
     font-family: ibm-plex;
     font-size: 18px;
+}
+
+.tagline {
+    font-weight: 700;
+}
+
+.news-card-container {
+    gap: 3vw;
 }
 
 .news-btn, .partner-btn {
