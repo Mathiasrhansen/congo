@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/burgermenu.js" defer></script>
+    <script src="js/donation-popup.js" defer></script>
     <title>Forside</title>
   </head>
   <body>
@@ -153,10 +154,61 @@
         </div>
       </div>
       <div class="donationBar">
-        <div class="donationContainer">
-          <a href="" class="donation"
-            >Støt nu <img class="arrow" src="img/arrow.svg" alt="" />
-          </a>
+        <div class="donation-container">
+          <dialog class="dialog" id="dialog">
+            <form method="dialog">
+              <div class="modal-backdrop">
+                <div class="donation-modal">
+                  <h1 class="modal-title">Donation</h1>
+                  <button id="closeBtn" class="close-btn">
+                    <img class="close-btn-cross" src="img/close.svg" alt="" />
+                  </button>
+                  <p class="modal-description">
+                    Din donation gør en stor forskel for børnene på Maison
+                    VIGALEX
+                  </p>
+
+                  <div class="donation-options-modal">
+                    <div
+                      class="donation-option-modal active"
+                      onclick="selectAmount(this)"
+                    >
+                      150kr.
+                    </div>
+                    <div
+                      class="donation-option-modal"
+                      onclick="selectAmount(this)"
+                    >
+                      300kr.
+                    </div>
+                    <div
+                      class="donation-option-modal"
+                      onclick="selectAmount(this)"
+                    >
+                      500kr.
+                    </div>
+                  </div>
+                  <div class="custom-donation-modal">
+                    <textarea
+                      class="donation-option"
+                      type="text"
+                      rows="1"
+                      placeholder="Valgfrit beløb"
+                      onclick="selectCustom()"
+                    ></textarea>
+                  </div>
+                  <div class="monthly-toggle-modal">
+                    <input type="checkbox" id="monthly" />
+                    <label for="monthly">Gentag månedligt</label>
+                  </div>
+                  <button class="donate-submit-modal">NÆSTE →</button>
+                </div>
+              </div>
+            </form>
+          </dialog>
+          <button class="donation" id="open-btn">
+            Støt nu <img class="arrow" src="img/arrow.svg" alt="" />
+          </button>
         </div>
       </div>
     </header>
