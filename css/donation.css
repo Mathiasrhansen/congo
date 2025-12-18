@@ -20,35 +20,40 @@ main {
 }
 
 .donationsmuligheder-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.muligheder-top, .muligheder-bottom {
-    display: flex;
-    flex-direction: column;
+.muligheder-top,
+.muligheder-bottom {
+  display: flex;
+  flex-direction: column;
 }
 
 .donationsmulighed-btn-container a {
-    text-decoration: none;
-    color: black;
-    background-color: #F1EDDE;
-    padding: 20px;
-    position: relative;
-    bottom: 50px;
-    cursor: pointer;
-    font-family: ibm-plex-med;
+  text-decoration: none;
+  color: black;
+  background-color: #f1edde;
+  padding: 20px;
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
+  font-family: ibm-plex-med;
 }
 
 .donationsmulighed-btn-container {
-    display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.donationsmulighed-btn-container:hover {
+  transform: translateY(-2px);
 }
 
 .donationsmulighed-card img {
-    width: 350px;
+  width: 350px;
 }
 
 /* Bliv fadder */
@@ -369,33 +374,34 @@ hr {
   }
 
   /* Valgmuligheder for donation */
-.donationsmuligheder-container {
+  .donationsmuligheder-container {
     align-items: normal;
-}
-    
-.muligheder-top, .muligheder-bottom {
+  }
+
+  .muligheder-top,
+  .muligheder-bottom {
     flex-direction: row;
     justify-content: space-evenly;
-}
-    
-.donationsmulighed-btn-container a {
-        text-decoration: none;
-        color: black;
-        background-color: #F1EDDE;
-        padding: 20px;
-        position: relative;
-        bottom: 50px;
-        cursor: pointer;
-    }
-    
-    .donationsmulighed-btn-container {
-        display: flex;
-        justify-content: center;
-    }
+  }
 
-    .donationsmulighed-card img {
-        width: 400px;
-    }
+  .donationsmulighed-btn-container a {
+    text-decoration: none;
+    color: black;
+    background-color: #f1edde;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+  }
+
+  .donationsmulighed-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .donationsmulighed-card img {
+    width: 400px;
+  }
 
   .fadder {
     display: grid;
