@@ -164,7 +164,6 @@
                   <div class="custom-donation-modal">
                     <textarea
                       class="donation-option"
-                      type="text"
                       rows="1"
                       placeholder="Valgfrit beløb"
                       onclick="selectCustom()"
@@ -215,12 +214,12 @@
                 class="donation-option"
                 name="donation"
                 rows="1"
-                id=""
+                id="donation-ammount"
                 placeholder="Valgfrit beløb"
               ></textarea>
             </div>
             <div class="monthly-toggle">
-              <input type="checkbox" id="monthly" />
+              <input type="checkbox" id="monthly-check" />
               <label for="monthly">Gentag månedligt</label>
             </div>
             <button class="donate-submit">Næste →</button>
@@ -229,41 +228,25 @@
       </section>
       <section class="stat">
         <div class="stat-container">
-          <img
-            class="stat-icon"
-            src="data:image/svg+xml,%3csvg width='118' height='106' viewBox='0 0 118 106' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cmetadata%3e%3crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:schema='http://schema.org/'%3e%3crdf:Description rdf:about=''%3e%3cschema:license rdf:resource='https://github.com/tabler/tabler-icons/blob/master/LICENSE'/%3e%3cschema:copyrightNotice%3e MIT License Copyright (c) 2020-2022 Pawe%c5%82 Kuna Permission is hereby granted%2c free of charge%2c to any person obtaining a copy of this software and associated documentation files (the 'Software')%2c to deal in the Software without restriction%2c including without limitation the rights to use%2c copy%2c modify%2c merge%2c publish%2c distribute%2c sublicense%2c and/or sell copies of the Software%2c and to permit persons to whom the Software is furnished to do so%2c subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED 'AS IS'%2c WITHOUT WARRANTY OF ANY KIND%2c EXPRESS OR IMPLIED%2c INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY%2c FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM%2c DAMAGES OR OTHER LIABILITY%2c WHETHER IN AN ACTION OF CONTRACT%2c TORT OR OTHERWISE%2c ARISING FROM%2c OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. %3c/schema:copyrightNotice%3e%3c/rdf:Description%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cpath d='M106.12 56.5968L59.2781 102.989L12.4365 56.5968C9.34685 53.5903 6.91319 49.9767 5.28876 45.9834C3.66433 41.9901 2.88431 37.7038 2.99783 33.3942C3.11135 29.0847 4.11594 24.8453 5.94835 20.9431C7.78076 17.0409 10.4013 13.5604 13.6449 10.7207C16.8886 7.88099 20.685 5.74366 24.7953 4.44328C28.9055 3.14291 33.2404 2.70766 37.5272 3.16495C41.8139 3.62223 45.9595 4.96214 49.7029 7.1003C53.4463 9.23846 56.7065 12.1286 59.2781 15.5886C61.8608 12.1537 65.1248 9.28883 68.8656 7.17336C72.6065 5.05789 76.7437 3.73734 81.0184 3.29435C85.2931 2.85135 89.6132 3.29546 93.7084 4.59887C97.8035 5.90227 101.586 8.03692 104.818 10.8692C108.05 13.7015 110.663 17.1705 112.493 21.059C114.323 24.9475 115.33 29.1719 115.452 33.4678C115.575 37.7636 114.809 42.0384 113.203 46.0247C111.597 50.011 109.186 53.6229 106.12 56.6343M59.2781 15.5511L38.7115 36.1177C37.5406 37.2889 36.8829 38.8772 36.8829 40.5333C36.8829 42.1894 37.5406 43.7777 38.7115 44.9489L42.1028 48.3402C46.4123 52.6497 53.4073 52.6497 57.7167 48.3402L63.9623 42.0947C67.6892 38.3678 72.744 36.274 78.0147 36.274C83.2854 36.274 88.3403 38.3678 92.0672 42.0947L106.12 56.1472M62.4009 74.8838L74.892 87.3749M78.0147 59.2699L90.5058 71.761' stroke='%23f48511' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e"
-            alt=""
-          />
+          <img src="img/hjerte.svg" alt="" class="stat-icon" />
           <p class="stat-num">2</p>
           <p class="stat-text">Organisationer</p>
         </div>
         <p class="stat-decoration">.</p>
         <div class="stat-container">
-          <img
-            class="stat-icon"
-            src="data:image/svg+xml,%3csvg width='118' height='106' viewBox='0 0 118 106' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cmetadata%3e%3crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:schema='http://schema.org/'%3e%3crdf:Description rdf:about=''%3e%3cschema:license rdf:resource='https://github.com/tabler/tabler-icons/blob/master/LICENSE'/%3e%3cschema:copyrightNotice%3e MIT License Copyright (c) 2020-2022 Pawe%c5%82 Kuna Permission is hereby granted%2c free of charge%2c to any person obtaining a copy of this software and associated documentation files (the 'Software')%2c to deal in the Software without restriction%2c including without limitation the rights to use%2c copy%2c modify%2c merge%2c publish%2c distribute%2c sublicense%2c and/or sell copies of the Software%2c and to permit persons to whom the Software is furnished to do so%2c subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED 'AS IS'%2c WITHOUT WARRANTY OF ANY KIND%2c EXPRESS OR IMPLIED%2c INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY%2c FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM%2c DAMAGES OR OTHER LIABILITY%2c WHETHER IN AN ACTION OF CONTRACT%2c TORT OR OTHERWISE%2c ARISING FROM%2c OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. %3c/schema:copyrightNotice%3e%3c/rdf:Description%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cpath d='M106.119 56.597L59.2782 102.988L41.1913 85.0763M2.9878 34.4631C2.9356 27.8763 4.96755 21.4418 8.79307 16.0796C12.6186 10.7174 18.0417 6.70221 24.287 4.60822C30.5322 2.51423 37.2796 2.4487 43.5644 4.421C49.8491 6.39329 55.3492 10.3024 59.2782 15.5893C61.8609 12.1544 65.1248 9.28961 68.8656 7.17417C72.6064 5.05873 76.7436 3.73819 81.0182 3.29521C85.2928 2.85222 89.6129 3.29632 93.708 4.59971C97.8031 5.9031 101.585 8.03772 104.817 10.87C108.049 13.7022 110.662 17.1712 112.492 21.0596C114.322 24.9481 115.33 29.1724 115.452 33.4682C115.574 37.764 114.808 42.0388 113.202 46.025C111.596 50.0112 109.185 53.623 106.119 56.6345M3.06899 53.0246H15.5599L28.0508 71.761L40.5418 34.2882L46.7872 53.0246H65.5236' stroke='%23f48511' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e"
-            alt=""
-          />
+          <img class="stat-icon" src="img/hjerte2.svg" alt="" />
           <p class="stat-num">100%</p>
           <p class="stat-text">Frivillighed</p>
         </div>
         <p class="stat-decoration">.</p>
         <div class="stat-container">
-          <img
-            class="stat-icon"
-            src="data:image/svg+xml,%3csvg width='106' height='106' viewBox='0 0 106 106' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cmetadata%3e%3crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:schema='http://schema.org/'%3e%3crdf:Description rdf:about=''%3e%3cschema:license rdf:resource='https://github.com/tabler/tabler-icons/blob/master/LICENSE'/%3e%3cschema:copyrightNotice%3e MIT License Copyright (c) 2020-2022 Pawe%c5%82 Kuna Permission is hereby granted%2c free of charge%2c to any person obtaining a copy of this software and associated documentation files (the 'Software')%2c to deal in the Software without restriction%2c including without limitation the rights to use%2c copy%2c modify%2c merge%2c publish%2c distribute%2c sublicense%2c and/or sell copies of the Software%2c and to permit persons to whom the Software is furnished to do so%2c subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED 'AS IS'%2c WITHOUT WARRANTY OF ANY KIND%2c EXPRESS OR IMPLIED%2c INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY%2c FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM%2c DAMAGES OR OTHER LIABILITY%2c WHETHER IN AN ACTION OF CONTRACT%2c TORT OR OTHERWISE%2c ARISING FROM%2c OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. %3c/schema:copyrightNotice%3e%3c/rdf:Description%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cpath d='M36.461 103.014V69.6808C36.461 66.734 37.6317 63.9078 39.7154 61.8241C41.7991 59.7403 44.6253 58.5697 47.5721 58.5697H58.6832C61.6301 58.5697 64.4562 59.7403 66.54 61.8241C68.6237 63.9078 69.7943 66.734 69.7943 69.6808V103.014M14.2388 53.0142H3.12769L53.1277 3.01416L103.128 53.0142H92.0166V91.903C92.0166 94.8499 90.8459 97.676 88.7622 99.7598C86.6785 101.844 83.8523 103.014 80.9055 103.014H25.3499C22.4031 103.014 19.5769 101.844 17.4932 99.7598C15.4094 97.676 14.2388 94.8499 14.2388 91.903V53.0142Z' stroke='%23f48511' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e"
-            alt=""
-          />
+          <img class="stat-icon" src="img/hus.svg" alt="" />
           <p class="stat-num">1</p>
           <p class="stat-text">Børnehjem</p>
         </div>
         <p class="stat-decoration">.</p>
         <div class="stat-container">
-          <img
-            class="stat-icon"
-            src="data:image/svg+xml,%3csvg width='125' height='106' viewBox='0 0 125 106' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cmetadata%3e%3crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:schema='http://schema.org/'%3e%3crdf:Description rdf:about=''%3e%3cschema:license rdf:resource='https://github.com/tabler/tabler-icons/blob/master/LICENSE'/%3e%3cschema:copyrightNotice%3e MIT License Copyright (c) 2020-2022 Pawe%c5%82 Kuna Permission is hereby granted%2c free of charge%2c to any person obtaining a copy of this software and associated documentation files (the 'Software')%2c to deal in the Software without restriction%2c including without limitation the rights to use%2c copy%2c modify%2c merge%2c publish%2c distribute%2c sublicense%2c and/or sell copies of the Software%2c and to permit persons to whom the Software is furnished to do so%2c subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED 'AS IS'%2c WITHOUT WARRANTY OF ANY KIND%2c EXPRESS OR IMPLIED%2c INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY%2c FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM%2c DAMAGES OR OTHER LIABILITY%2c WHETHER IN AN ACTION OF CONTRACT%2c TORT OR OTHERWISE%2c ARISING FROM%2c OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. %3c/schema:copyrightNotice%3e%3c/rdf:Description%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cpath d='M8.19684 94.812V70.669L3.36826 65.8405V46.5261C3.36826 45.2455 3.87698 44.0173 4.78252 43.1118C5.68805 42.2063 6.91622 41.6975 8.19684 41.6975H27.5112C28.7918 41.6975 30.02 42.2063 30.9255 43.1118C31.831 44.0173 32.3398 45.2455 32.3398 46.5261V65.8405L27.5112 70.669V94.812M52.813 103.069V83.7545H43.1558L52.813 54.783C52.813 53.5024 53.3217 52.2742 54.2272 51.3687C55.1328 50.4631 56.3609 49.9544 57.6415 49.9544H67.2987C68.5793 49.9544 69.8075 50.4631 70.713 51.3687C71.6186 52.2742 72.1273 53.5024 72.1273 54.783L81.7845 83.7545H72.1273V103.069M97.4498 94.812V70.669L92.6212 65.8405V46.5261C92.6212 45.2455 93.1299 44.0173 94.0355 43.1118C94.941 42.2063 96.1692 41.6975 97.4498 41.6975H116.764C118.045 41.6975 119.273 42.2063 120.178 43.1118C121.084 44.0173 121.593 45.2455 121.593 46.5261V65.8405L116.764 70.669V94.812M27.5112 12.726C27.5112 18.0595 23.1875 22.3832 17.854 22.3832C12.5205 22.3832 8.19684 18.0595 8.19684 12.726C8.19684 7.39251 12.5205 3.06885 17.854 3.06885C23.1875 3.06885 27.5112 7.39251 27.5112 12.726ZM72.1273 20.9829C72.1273 26.3164 67.8036 30.6401 62.4701 30.6401C57.1366 30.6401 52.813 26.3164 52.813 20.9829C52.813 15.6494 57.1366 11.3257 62.4701 11.3257C67.8036 11.3257 72.1273 15.6494 72.1273 20.9829ZM116.764 12.726C116.764 18.0595 112.44 22.3832 107.107 22.3832C101.773 22.3832 97.4498 18.0595 97.4498 12.726C97.4498 7.39251 101.773 3.06885 107.107 3.06885C112.44 3.06885 116.764 7.39251 116.764 12.726Z' stroke='%23f48511' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e"
-            alt=""
-          />
+          <img class="stat-icon" src="img/mennesker.svg" alt="" />
           <p class="stat-num">17</p>
           <p class="stat-text">Børn</p>
         </div>
@@ -272,7 +255,7 @@
         <h2 class="help-headline">Bliv en del af noget større</h2>
         <div class="help-container">
           <div class="help-card">
-            <img class="help-img" src="img/index/pic1.jpg" alt="" />
+            <img class="help-img" src="img/index/pic1.webp" alt="" />
             <div class="help-textarea">
               <p>
                 Som medlem støtter du vores langsigtede arbejde og hjælper os
@@ -283,7 +266,7 @@
             </div>
           </div>
           <div class="help-card">
-            <img class="help-img" src="img/index/pic2.jpeg" alt="" />
+            <img class="help-img" src="img/index/pic2.webp" alt="" />
             <div class="help-textarea">
               <p>
                 Som fadder støtter du direkte et barns opvækst og tryghed. Dit
@@ -328,7 +311,7 @@
           <h2 class="news-headline">Seneste nyheder fra os</h2>
           <div class="news-card-container">
             <article class="news-article-card">
-              <img src="img/index/news1.png" alt="" class="news-img" />
+              <img src="img/index/news1.webp" alt="" class="news-img" />
               <div class="news-content">
                 <p class="news-text tagline">
                   Congos Børn udvider indsatsen i Øst-DR Congo og Kinshasa
@@ -341,7 +324,7 @@
               </div>
             </article>
             <article class="news-article-card">
-              <img src="img/index/news2.png" alt="" class="news-img" />
+              <img src="img/index/news2.webp" alt="" class="news-img" />
               <div class="news-content">
                 <p class="news-text tagline">En glædelig nyhed!</p>
                 <p class="news-text">
@@ -352,7 +335,7 @@
               </div>
             </article>
             <article class="news-article-card">
-              <img src="img/index/news3.png" alt="" class="news-img" />
+              <img src="img/index/news3.webp" alt="" class="news-img" />
               <div class="news-content">
                 <p class="news-text tagline">
                   Et nyt håb for Kinshasas gadebørn
@@ -374,7 +357,7 @@
       <section class="partner">
         <h2 class="partner-headline">Bliv vores næste virksomhedspartner</h2>
         <div class="partner-container">
-          <img class="partner-img" src="img/index/partner1.png" alt="" />
+          <img class="partner-img" src="img/index/partner1.webp" alt="" />
           <div class="partner-content">
             <p class="partner-text">
               Som virksomhed kan du være med til at skabe en tryg fremtid for

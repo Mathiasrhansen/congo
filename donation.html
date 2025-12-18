@@ -164,7 +164,6 @@
                   <div class="custom-donation-modal">
                     <textarea
                       class="donation-option"
-                      type="text"
                       rows="1"
                       placeholder="Valgfrit beløb"
                       onclick="selectCustom()"
@@ -281,11 +280,9 @@
           <h3>DONATION</h3>
           <p>Din donation gør en stor forskel for børnene på Maison VIGALEX</p>
           <div class="donation-options">
-            <div class="donation-option active" id="bidrag-donation">
-              150kr.
-            </div>
-            <div class="donation-option" id="bidrag-donation">300kr.</div>
-            <div class="donation-option" id="bidrag-donation">500kr.</div>
+            <div class="donation-option active bidrag-donation">150kr.</div>
+            <div class="donation-option bidrag-donation">300kr.</div>
+            <div class="donation-option bidrag-donation">500kr.</div>
           </div>
           <div class="custom-donation">
             <textarea
@@ -297,7 +294,7 @@
             ></textarea>
           </div>
           <div class="monthly-toggle">
-            <input type="checkbox" id="monthly" />
+            <input type="checkbox" id="monthly-bidrag" />
             <label for="monthly">Gentag månedligt</label>
           </div>
           <button class="donate-submit">Næste →</button>
@@ -346,7 +343,7 @@
                     <input id="email" name="email" type="email" required />
                   </div>
                   <div class="besked">
-                    <label for="bigText">BESKED*</label>
+                    <label for="bigText2">BESKED*</label>
                     <br />
                     <textarea
                       id="bigText2"

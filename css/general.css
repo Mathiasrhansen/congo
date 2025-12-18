@@ -255,11 +255,13 @@ body {
 
 .custom-donation-modal {
   margin-bottom: 30px;
-}
-
-.custom-donation-modal {
   display: flex;
   justify-content: center;
+}
+
+.custom-donation-modal textarea {
+    resize: none;
+    width: 100%;
 }
 
 .donate-submit-modal {
