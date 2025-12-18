@@ -46,26 +46,33 @@ h3 {
   /* Introduktion + billeder med navn af ambassadørerne*/
 
   #title_text {
-    width: 50%;
-  }
+        width: 50%;
+    }
 
-  .ambassadorer-img {
-    width: 100%;
-    margin-top: 20px;
-  }
+   .ambassadorer-img {
+        width: 280px;
+        margin-top: 0;
+        display: block;
+        object-fit: contain;
+    }
 
-  #profile {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 130px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 50px;
-  }
 
-  #profile h3 {
-    text-align: center;
-  }
+    #profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px 20px;
+        margin-top: 50px;
+        margin-bottom: 90px;
+        text-align: center;
+
+    }
+
+    #profile h3 {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+    }
 
   /* Læs mere om dem */
   .profile_img {
